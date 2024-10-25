@@ -8,7 +8,9 @@
     <h3>Program for å regne ut gjennomsnitt av flere tall:</h3>
     Skriv tallene separert med komma:
     <input bind:value={tall} />
-    <button on:click={() => (gjsnitt = gjsnittTallene(tall)})>Regn ut gjennomsnitt</button>
+    <button on:click={() => (gjsnitt = gjsnittTallene(tall))}
+        >Regn ut gjennomsnitt</button
+    >
 </label>
 
-<p>Gjennomsnitt av tallene er: {gjsnittTallene(tall)}</p>
+<p>Gjennomsnitt av tallene er: {gjsnitt}</p>
